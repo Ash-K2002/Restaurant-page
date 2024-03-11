@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'myfont1';
+    src: url('./BebasNeue-Regular.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myfont2';
+    src: url('./Raleway-VariableFont_wght.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root{
+    --backcol1:#083344; 
+    --forecolor1: #6ee7b7;
+}
+
+body{
+    background-color: var(--backcol1);
+    font-family: 'myfont2';
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    color: var(--forecolor1);
+    font-size: 4em;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.nav-btn{
+    color: aliceblue;
+    background-color: blueviolet;
+    font-size: 20px;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+}
+
+#main-content{
+    background-color: rgba(149, 149, 149, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+/*styling for menu*/
+.welcome-home{
+
+}
+
+.specialities-home{
+
+}
+
+.specialities-home img{
+height: 200px;
+width: 200px;
+}
+
