@@ -12,53 +12,113 @@
     font-style: normal;
 }
 
+h1,h2,h3,h4{
+    font-weight: bolder;
+    color: var(--backcol1);
+}
 :root{
     --backcol1:#083344; 
     --forecolor1: #6ee7b7;
+    --backcol2: #134e4a;
+    --backcol3: #c0c0c0;
 }
 
 body{
     background-color: var(--backcol1);
     font-family: 'myfont2';
+    display: flex;
+    flex-direction: column;
 }
 
 header h1{
     display: flex;
     justify-content: center;
     color: var(--forecolor1);
-    font-size: 4em;
+    font-size: 5em;
+    margin: 1em 0;
 }
 
 nav{
     display: flex;
-    justify-content: center;
-    gap: 1em;
+    justify-content: space-around;
+    margin: 0 10%;
 }
 
 .nav-btn{
-    color: aliceblue;
-    background-color: blueviolet;
-    font-size: 20px;
+    font-family: 'myfont2';
+    color: var(--forecolor1);
+    background-color: var(--backcol2);
+    font-size: 2em;
     padding: 0.2em 0.5em;
+    border: none;
     border-radius: 5px;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
+.nav-btn2{
+    font-family: 'myfont2';
+    color: var(--backcol1);
+    background-color: var(--backcol3);
+    font-size: 2em;
+    padding: 0.2em 0.5em;
+}
+
 
 #main-content{
-    background-color: rgba(149, 149, 149, 0.5);
+    background-color: var(--backcol3);
     color: rgb(0, 0, 0);
+    margin: 0 10%;
+    padding: 2em;
+    border-radius: 20px;
 }
 
-/*styling for menu*/
-.welcome-home{
-
+#main-content h2{
+    color: var(--backcol1);
+    font-size: 2.5em;
 }
+
+/*styling for home*/
 
 .specialities-home{
-
+display: flex;
+flex-direction: column;
 }
 
+.specialities-home h2{
+    flex-grow: 1;
+}
+.specialities-home >div{
+    flex-grow: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 1em;
+}
+.specialities-home>div>div{
+    border: 4px solid var(--backcol1) ;
+    border-radius: 10px;
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+.specialities-home h3{
+font-size: 2em;
+}
+
+.specialities-home>div>p{
+
+}
 .specialities-home img{
-height: 200px;
-width: 200px;
+justify-self: center;
+align-self: center;
+width: 90%;
+height: auto;
+aspect-ratio: 1/1;
 }
 
+/*styling for menu */
+
+.menu-card h3{
+    
+    font-size: 1.5em;
+}

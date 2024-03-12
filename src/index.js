@@ -5,8 +5,12 @@ import aboutTab from './about';
 import './style.css';
 
 
-console.log('hello restaurant');
-console.log('hello again and again and again and again');
+function resetButtonStyle()
+{
+    document.querySelectorAll('.nav-btn').forEach((button)=>{
+        button.classList='nav-btn';
+    });
+}
 
 pageload();
 
@@ -18,6 +22,8 @@ const about= document.querySelector('#about-btn');
 home.addEventListener('click',()=>{
 document.querySelector('#main-content').textContent='';
 homeTab();
+resetButtonStyle();
+home.classList.add('nav-btn2');
 });
 
 // shows up the home when the page loads afresh
@@ -27,11 +33,15 @@ home.click();
 menu.addEventListener('click',()=>{
     document.querySelector('#main-content').textContent='';
     menuTab();
+    resetButtonStyle();
+    menu.classList.add('nav-btn2');
 });
 
 about.addEventListener('click',()=>{
     document.querySelector('#main-content').textContent='';
     aboutTab();
+    resetButtonStyle();
+    about.classList.add('nav-btn2');
 });
 
 

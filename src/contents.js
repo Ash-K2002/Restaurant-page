@@ -1,6 +1,6 @@
-import lasagna from './images/pexels-anna-guerrero-4079520.jpg'
-import spring from './images/pexels-nishant-patel-4105288.jpg'
-import caprese from './images/pexels-gabriel-lima-15735986.jpg'
+import lasagna from './images/lasagna.jpg'
+import spring from './images/spring.jpg'
+import caprese from './images/salad.jpg'
 
 const img1= new Image();
 img1.src= caprese;

@@ -23,12 +23,15 @@ let element = addContent(content.welcomeContent,'p');
 welcome.appendChild(element);
 
 const food= document.createElement('div');
+const foodDeck=document.createElement('div');
+
 food.appendChild(addContent('Our Specialities:','h2'));
+food.appendChild(foodDeck);
 food.className='specialities-home';
 const list= content.specialities;
 for(let item of list)
 {   
-    food.appendChild(genFoodCards(item.name, item.description,item.image));
+    foodDeck.appendChild(genFoodCards(item.name, item.description,item.image));
 }
 mainContent.appendChild(food);
 
